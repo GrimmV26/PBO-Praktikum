@@ -12,15 +12,15 @@ class KonversiSuhu{
     }
 
     double cKeR(){
-        return c*4 / 5;
+        return (c*4) / 5;
     }
 
     double rKeC(){
-        return r*5 / 4;
+        return (r*5) / 4;
     }
 
     double fKeR(){
-        return (f-32) * 4/9;
+        return (f-32) * (4/9);
     }
 
     double rKeF(){

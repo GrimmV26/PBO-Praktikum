@@ -31,7 +31,7 @@ public class Main {
         System.out.println("\nNo 5");
         Segitiga N5 = new Segitiga();
         N5.a = 6;
-        N5.b = 8;
+        N5.t = 8;
         N5.tampil();
 
         System.out.println("\nNo 6");

@@ -1,15 +1,15 @@
 package P2.Tugas;
 
 class Segitiga{
-    int a, b;
+    double a, t;
 
     double luas(){
-        return (a*b) / 2.0;
+        return (a*t) * 0.5;
     }
 
     void tampil(){
-        System.out.println("a    : " + a);
-        System.out.println("b    : " + b);
-        System.out.println("Luas : " + luas());
+        System.out.println("Alas   : " + a);
+        System.out.println("Tinggi : " + t);
+        System.out.println("Luas   : " + luas());
     }
 }
