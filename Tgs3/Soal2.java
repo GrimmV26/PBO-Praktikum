@@ -36,26 +36,22 @@ public class Soal2 {
     }
 
     void bacaDariFile() throws IOException {
-        DataInputStream dis = new DataInputStream(new FileInputStream("Belanja.dat"));
+        DataInputStream input = new DataInputStream(new FileInputStream("Belanja.dat"));
         System.out.println("\n--- Struk dari DataInputStream (Belanja.dat) ---");
-        System.out.println("Nama          : " + dis.readUTF());
-        System.out.println("Total Belanja : " + dis.readDouble());
-        System.out.println("Diskon (%)    : " + dis.readDouble());
-        System.out.println("Total         : " + dis.readDouble());
-        System.out.println("Bayar         : " + dis.readDouble());
-        System.out.println("Kembalian     : " + dis.readDouble());
-        dis.close();
+        System.out.println("Nama          : " + input.readUTF());
+        System.out.println("Total Belanja : " + input.readDouble());
+        System.out.println("Diskon (%)    : " + input.readDouble());
+        System.out.println("Total         : " + input.readDouble());
+        System.out.println("Bayar         : " + input.readDouble());
+        System.out.println("Kembalian     : " + input.readDouble());
+        input.close();
     }
 
-    public void run() {
+    public void run() throws IOException {
         Scanner input = new Scanner(System.in);
-        try {
-            ambilInput(input);
-            hitung();
-            simpanKeFile();
-            bacaDariFile();
-        } catch (IOException e) {
-            System.out.println("Terjadi kesalahan I/O: " + e.getMessage());
-        }
+        ambilInput(input);
+        hitung();
+        simpanKeFile();
+        bacaDariFile();
     }
 }
