@@ -5,7 +5,7 @@ import java.io.*;
 public class Soal5 {
     int mangga, tetangga, jambuperttg, busuk, ttlBuahDibeli;
 
-    void ambilInput(BufferedReader br) throws IOException {
+    void Input(BufferedReader br) throws IOException {
         System.out.println("=== Soal 5: Total Buah Ibu Sisca ===");
         System.out.print("Banyaknya mangga yang dibeli pertama   : ");
         mangga = Integer.parseInt(br.readLine());
@@ -30,7 +30,7 @@ public class Soal5 {
     public void run() throws IOException {
         InputStreamReader isr = new InputStreamReader(System.in); 
         BufferedReader br = new BufferedReader(isr); 
-        ambilInput(br);
+        Input(br);
         hitung();
         tampilkan();
     }

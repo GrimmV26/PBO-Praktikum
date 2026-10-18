@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Soal4 {
     double m, v, r, fc;
 
-    void ambilInput(Scanner input) {
+    void Input(Scanner input) {
         System.out.println("=== Soal 4: Gaya Sentripetal (Fc = M.V^2 / r) ===");
         System.out.print("Masukkan Massa benda (M)    : ");
         m = input.nextDouble();
@@ -25,7 +25,7 @@ public class Soal4 {
 
     public void run() {
         Scanner input = new Scanner(System.in);
-        ambilInput(input);
+        Input(input);
         hitung();
         tampilkan();
     }

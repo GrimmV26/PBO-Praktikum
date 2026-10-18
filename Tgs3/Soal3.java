@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Soal3 {
-    void cetakPenjelasan() {
+    void Penjelasan() {
         System.out.println("=== Soal 3: Perbedaan Scanner dan BufferedReader ===");
         System.out.println("1. Scanner menggunakan java.util.Scanner, sedangkan BufferedReader menggunakan java.io.*.");
         System.out.println("2. BufferedReader mengharuskan try-catch atau throws IOException.");
@@ -30,7 +30,7 @@ public class Soal3 {
 
     public void run() throws IOException {
         Scanner input = new Scanner(System.in);
-        cetakPenjelasan();
+        Penjelasan();
         demoScanner(input);
         demoBufferedReader();
     }

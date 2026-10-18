@@ -7,7 +7,7 @@ public class Soal2 {
     String nmIn;
     double tbIn, discIn, ttlIn, byrIn, kmblIn;
 
-    void ambilInput(Scanner input) {
+    void Inputan(Scanner input) {
         System.out.println("=== Soal 2: Pembelanjaan ===");
         System.out.print("Nama          : ");
         nmIn = input.nextLine();
@@ -49,7 +49,7 @@ public class Soal2 {
 
     public void run() throws IOException {
         Scanner input = new Scanner(System.in);
-        ambilInput(input);
+        Inputan(input);
         hitung();
         simpanKeFile();
         bacaDariFile();

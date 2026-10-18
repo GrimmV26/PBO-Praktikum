@@ -6,7 +6,7 @@ public class Soal7 {
     int bnykNovel, tblLembar;
     int hr, jam, mnt, dtk;
 
-    void ambilInput(Scanner input) {
+    void Input(Scanner input) {
         System.out.println("=== Soal 7: Waktu Pencetakan Novel ===");
         System.out.print("Banyaknya novel yang akan dicetak : ");
         bnykNovel = input.nextInt();
@@ -36,7 +36,7 @@ public class Soal7 {
 
     public void run() {
         Scanner input = new Scanner(System.in);
-        ambilInput(input);
+        Input(input);
         hitung();
         tampilkan();
     }

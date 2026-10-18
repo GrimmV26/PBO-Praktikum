@@ -6,7 +6,7 @@ public class Soal6 {
     int jam1, mnt1, dtk1, jam2, mnt2, dtk2;
     int hslJam, hslMenit, hslDetik;
 
-    void ambilInput(Scanner input) {
+    void Input(Scanner input) {
         System.out.println("=== Soal 6: Selisih Waktu ===");
         System.out.println("-> Waktu Pertama");
         System.out.print("   Jam   : "); jam1 = input.nextInt();
@@ -35,7 +35,7 @@ public class Soal6 {
 
     public void run() {
         Scanner input = new Scanner(System.in);
-        ambilInput(input);
+        Input(input);
         hitung();
         tampilkan();
     }
